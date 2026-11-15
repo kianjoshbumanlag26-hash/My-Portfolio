@@ -1,0 +1,69 @@
+Body {
+        Background-color: white;
+       }
+      .Main {
+          Text-align: center;
+      }
+     .Sub {
+         Font-weight: bold;
+     }
+       
+       
+       /* Personal Info */ 
+       .P {
+            Background-color: teal;
+            Padding: 30px 50px;
+            Border-radius: 10px;
+            Font-family: sans-serif;p
+            Line-height: 1.6;
+            Color: white;
+        }
+       
+      /* Educ Background */
+      .Table { 
+         background: teal; 
+         border-radius: 12px; 
+         overflow: hidden; 
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+         margin: 20px auto; 
+         width: 90%; 
+         max-width: 800px; 
+        }
+        .Head {
+           font-weight: bold;     
+        }
+        .Row {
+           Display: grid;
+           Grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1.5fr;
+           Align-items: center;
+           padding: 15px 20px;
+           border-bottom: 1px solid #e0e0e0;
+       }
+       .c {
+           Padding: 5px;
+           font-size: 14px;
+           Color: white;
+       }
+      
+       /* Skills */
+        .S{
+            Background-color: teal;
+          Color: white;
+          Border-radius: 20px;
+          Padding: 40px 60px;    
+        }
+       .n {
+           Font-weight: bold;
+       }
+      
+      /* Java Code */
+     .J {
+         Background-color: teal;
+          Color: white;
+          Border-radius: 20px;
+          Padding: 40px 50px;    
+         }
+        .brief {
+            Font-weight: bold;
+        }
+      

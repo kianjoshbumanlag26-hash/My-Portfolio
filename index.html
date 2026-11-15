@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="Main">MY PORTFOLIO</h1>
+    </header>
+    
+        <div class="Sub">
+        <a><p>Personal Information</p></a>
+        </div>
+        <div class="P">
+        <a><p>Name: Kian Josh DC. Bumanlag</p></a>
+        <a><p>Age: 18</p></a>
+        <a><p>Sex: Male</p></a>
+        <a><p>Address: Sta. Veronica, Guimba, Nueva Ecija</p></a>
+        <a><p>School: Our Lady of the Sacred Heart College of Guimba</p></a>
+        <a><p>Contact: 0951-343-0025</p></a>
+        </div>
+        
+        <div class="Sub">
+        <a><p>Educational Background</p></a>
+        </div>
+        <div class="E">
+        <div class="Table">
+        <div class="Head Row">
+            <div class="c">Level</div>
+            <div class="c">School</div>
+            <div class="c">Course/Strand</div>
+            <div class="c">Year/Grade</div>
+            <div class="c">Achievements</div>
+        </div>
+        <div class="Row">
+            <div class="c">Elementary</div>
+            <div class="c">Guimba West Central School</div>
+            <div class="c">N/A</div>
+            <div class="c">2014-2019(1-6)</div>
+            <div class="c">N/A</div>
+        </div>
+        <div class="Row">
+            <div class="c">Highschool</div>
+            <div class="c">Our Lady of the Sacred Heard College of Guimba</div>
+            <div class="c">Accountancy, Business, and Management</div>
+            <div class="c">2020-2026(7-12)</div>
+            <div class="c">With Honor</div>
+        </div>
+        <div class="Row">
+            <div class="c">College</div>
+            <div class="c">Our Lady of the Sacred Heart College of Guimba</div>
+            <div class="c">Bachelor of Science in Information Technology</div>
+            <div class="c">2026-Present</div>
+            <div class="c">N/A</div>
+        </div>
+    </div>
+        </div>
+        
+        <div class="Sub">
+        <a><p>Skills</p></a>
+        </div>
+        <div class="S">
+        <p class="n">Technical Skills:</p>
+         <p>Basic Java Programming, HTML, CSS</p>
+          <p class="n">Programming Knowledge:</p>
+          <p>Data types, looping, Array, Conditional Statements</p>
+          <p class="n">Other skills:</p>
+          <p>Art skills, design skills</p>
+        </div>
+        
+        <div class="Sub">
+        <a><p>Java Code</p></a>
+        </div>
+        <div class="J">
+            <a><p class="brief">Explanation</p></a>
+            <a><p>The program below asks the user to input 12 numbers between -100 and 100 and stores those numbers in an array, then it displays the numbers in the Original order and in Reversed order. It then calculates the Sum of all the numbers, the Highest number, the Lowest number, and the Average.</p></a>
+        <pre><code>import java.util.Scanner;
+
+public class ArrayReversal {
+    public static void main(String[] args) {
+        /* Kian Josh DC. Bumanlag
+        1-B BSIT
+        CC102 Finals Exam */
+        Scanner userinput = new Scanner(System.in);
+        int[] Integers = new int[12]; // Declaration of Array with a size that can hold 12 integers
+        
+        /*   V Input and Validation V  */
+        System.out.println("\n Enter 12 Numbers between -100 and 100:");
+        System.out.println();
+        for (int n = 0; n < 12; n++) {
+            while (true) {
+                System.out.print("Enter a number " + n + ": ");
+                if (userinput.hasNextInt()) {
+                    int number = userinput.nextInt();
+                    if (number >= -100 && number <= 100) {
+                        Integers[n] = number;
+                        break;
+                    } else {
+                        System.out.println("Error: Numbers should only be between -100 & 100.");
+                    }
+                } else {
+                    System.out.println("Error: Please enter a valid Number.");
+                    userinput.next();                   
+                }
+            }
+        }
+        
+        /*   V Original Sequence V  */
+        System.out.println();
+        System.out.println("\n Orginal Sequence ");
+        System.out.println();
+        for (int n = 0; n < 12; n++) { 
+        System.out.println("Number " + n + ": " + Integers[n]);
+        }
+        
+        /*   V Reversed Sequence V  */
+        System.out.println();
+        System.out.println("\n Reversed Sequence ");
+        System.out.println();
+       for (int n = 11; n >= 0; n--) {
+       	System.out.println("Number " + n + ": " + Integers[n]);
+       }
+       
+       /*  V Results: Sum, Highest, Lowest, and Average V  */
+       int S = 0;
+       int H = Integers[0];
+       int L = Integers[0];
+       
+       for (int n = 0; n < 12; n++) {
+       	S += Integers[n];
+       	
+       	if (Integers[n] > H) {
+       		H = Integers[n];
+       	}
+       	if (Integers[n] < L) {
+       		L = Integers[n];
+       	}
+       }
+       
+       double A = (double) S / 12;
+       
+       System.out.println();
+       System.out.println("\n Results ");
+       System.out.println("Sum: " + S);
+       System.out.println("Average: " + A);
+       System.out.println("Highest: " + H);
+       System.out.println("Lowest: " + L);
+       
+    }
+}</code></pre>
+        </div>
+        
+</body>
+</html>
